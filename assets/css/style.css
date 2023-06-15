@@ -1,0 +1,105 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+  width: 236px;
+  height: 354px;
+  margin: 0;
+  
+}
+.box img{
+  border-radius: 20px;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  right: -150px;
+  margin-right: 5px;
+  transform: translateY(0px);
+  transition: 0.35s;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+#icona2{    
+  line-height: 30px;
+}
+
+#icona1{            
+  line-height: 27px;
+}
+
+.icona3 {
+  background-color: aliceblue;
+  text-align: center;
+  width: 135px;
+  height: 30px;
+  border-radius: 60px;
+  line-height: 30px;
+  position: relative;
+  left: 5px;
+  transform: translateY(-30px);
+  transition: 0.35s;
+  cursor: pointer;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.icona3 i{
+  margin-left: 25px;
+
+}
+
+.save {
+  background-color: red;
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 45px;
+  border-radius: 60px;
+  line-height: 41px;
+  position: relative;
+  left: 150px;
+  font-size: 1.2rem;
+  transform: translateY(-50px);
+  transition: 0.35s;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+  top: 45px;
+}
+
+.box:hover .save{
+transform: translateY(10px);
+opacity: 1;
+
+}
+.box:hover .circle {
+transform: translateY(-40px);
+opacity: 1;
+
+}
+.box:hover .icona3{
+transform: translateY(-70px); 
+opacity: 1;
+
+}
+.box:hover .img {
+filter:  brightness(0.7);
+
+}
+.img{
+  margin-left: 0;
+  width: 300px;
+}
